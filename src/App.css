@@ -1,0 +1,271 @@
+초기화
+/* 기본 글자 크기 16px */
+*{
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  background-color: '#ffffff';
+}
+body{
+  width: 100%;
+  height: 100%;
+}
+html{
+  font-size: 16;
+}
+div{
+  width: 100px;
+  height: 100px;
+  background-color:black;
+}
+
+.parent{
+  width: 300px;
+  height: 200px;
+  background-color: royalblue;
+}
+
+.child {
+  min-width: 400px;
+  height: 100px;
+  background-color: blue;
+}
+
+.parent2{
+  width: 300px;
+  height: 200px;
+  background-color: royalblue;
+  font-size: 10px;
+}
+
+.child2{
+  /* width: 50vw;
+  height: 50vh; */
+  background-color: green;
+}
+
+.container {
+  background-color: #fff;
+  height: auto;
+}
+
+.container .item{
+  width: 100px;
+  height: 100px;
+  background-color: blue;
+  margin: 20px;
+}
+
+.container_padding {
+  background-color: #fff;
+  height: auto;
+}
+
+.container_padding .item_padding{
+  width: 100px;
+  height: 100px;
+  background-color: blue;
+  border : 4px solid green
+}
+
+.container_padding .item_padding:first-child{
+  padding: 20px;
+}
+
+.container_border {
+  background-color: #fff;
+  width: 100px;
+  height: auto;
+  
+}
+
+.container_border .item_border:first-child{
+  border : 1px dashed blue
+}
+
+.item_box{
+  width: 100px;
+  height: auto;
+  background-color: blue;
+}
+
+.item_box:last-child{
+  border: 4px solid red;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.parent_overflow{
+  width: 200px;
+  height: 150px;
+  background-color: royalblue;
+  margin: 20px;
+  padding: 20px;
+  overflow: auto;
+}
+
+.child_overflow {
+  width: 300px;
+  height: 100px;
+  background-color: orange;
+}
+
+.span{
+  width: 120px;
+  height: 30px;
+  background-color: royalblue;
+  color: white;
+  display: block;
+  border: 2px solid green;
+  justify-content: center;
+  text-align: center;
+}
+
+
+.parent_opacity{
+  width: 100px;
+  height: 100px;
+  padding: 30px;
+  background-color: royalblue;
+}
+
+.child_opacity {
+  width: 200px;
+  height: 100px;
+  background-color: red;
+  opacity: .5;
+}
+ 
+h1{
+  font-size: 24px;
+  font-weight: 700;
+  font-family: serif;
+}
+p{
+ width: 350px;
+ padding: 10px;
+ border: 1px solid;
+ box-sizing: border-box;
+ line-height: 1.4;
+}
+a{
+  display: block;
+  width: 200px;
+  height: 100px;
+  background: blue;
+  color: #ffffff;
+  font-size: 22px;
+  text-decoration: none;
+  text-align: center;
+  line-height: 100px;
+}
+
+
+.warp{
+  width: 500px;
+  height: 400px;
+  background-color: tomato;
+  position: relative;
+}
+
+.container_css{
+  width: 300px;
+  background-color: royalblue;
+}
+.container_css .item_css{
+  border: 4px dashed red;
+  background-color: orange;
+}
+.container_css .item_css:nth-child(1){
+  width: 100px;
+  height: 100px;
+}
+.container_css .item_css:nth-child(2){
+  width: 140px;
+  height: 70px;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}.container_css .item_css:nth-child(3){
+  width: 70px;
+  height: 120px;
+}
+
+
+.container_stack{
+  width: 300px;
+  height: auto;
+  background-color: royalblue;
+  position: relative;
+}
+.container_stack .item_stack{
+  width: 100px;
+  height: 100px;
+  border: 4px dashed red;
+  background-color: orange;
+}
+.container_stack .item_stack:nth-child(1){
+ position: relative; 
+ z-index: 1;
+}
+.container_stack .item_stack:nth-child(2){
+  position: absolute;
+  top:50px;
+  left:50px;
+}.container_stack .item_stack:nth-child(3){
+ z-index: 1;
+ position: fixed;
+  }
+
+.container_flexd{
+  width: 500px;
+  height: 300px;
+  background-color: royalblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container_flexd .item_flexd{
+  width: 100px;
+  height: 100px;
+  border: 3px dashed red;
+  background-color: orange;
+  flex-grow: 1;
+  flex-basis: 0;
+}
+
+.container_flexd .item_flexd:nth-child(3){
+  flex-grow: 2;;
+}
+
+.hover{
+  width: 100px;
+  height: 100px;
+  background-color: orange;
+  transition:1s;
+  transition-delay: .5s;
+}
+
+.hover:hover{
+  width: 300px;
+  background-color: royalblue;
+}
+
+.container_edit{
+  width: 100px;
+  height: 100px;
+  background-color: royalblue;
+  perspective: 250px;
+}
+.container_edit .item_edit{
+  width: 100px;
+  height: 100px;
+  background-color: orange;
+  font-size: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: rotateX(0deg);
+  backface-visibility: hidden;
+}

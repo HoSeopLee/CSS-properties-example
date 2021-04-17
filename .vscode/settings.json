@@ -1,0 +1,61 @@
+{
+  "editor.tabSize": 2,
+  "javascript.preferences.quoteStyle": "single",
+  "explorer.confirmDragAndDrop": false,
+  "editor.acceptSuggestionOnEnter": "smart",
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact"
+  },
+  "breadcrumbs.enabled": true,
+  "diffEditor.ignoreTrimWhitespace": true,
+  "editor.suggestSelection": "first",
+  "prettier.singleQuote": true,
+  "prettier.jsxSingleQuote": false,
+  "editor.formatOnSave": true,
+  "javascript.updateImportsOnFileMove.enabled": "never",
+  "javascript.format.enable": false,
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "markdown.preview.lineHeight": 1.4,
+  "editor.hideCursorInOverviewRuler": true,
+  "git.confirmSync": false,
+  "workbench.startupEditor": "none",
+  "editor.renderWhitespace": "none",
+  "editor.renderControlCharacters": false,
+  "extensions.ignoreRecommendations": false,
+  "git.autofetch": true,
+  "[django-html]": {},
+  "files.associations": {
+    "*.html": "html"
+  },
+  "terminal.integrated.inheritEnv": false,
+  "terminal.integrated.shell.windows": "C:\\Windows\\System32\\cmd.exe",
+  "window.zoomLevel": -2,
+  "editor.codeActionsOnSave": null,
+  "editor.formatOnPaste": true,
+  "editor.formatOnType": true,
+  "editor.fontLigatures": null,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "[json]": {
+    "editor.quickSuggestions": {
+      "strings": true
+    },
+    "editor.suggest.insertMode": "replace"
+  },
+  "launch": {
+    "configurations": [],
+    "compounds": []
+  }
+
+  // 주석(comments) 색상 변경
+  // "editor.tokenColorCustomizations": {
+  //   "textMateRules": [
+  //     {
+  //       "scope": "comment",
+  //       "settings": {
+  //         "fontStyle": "italic", //주석의 폰트체를 이탤릭 처리
+  //         "foreground": "#f3a32b" //주석의 색상을 변경
+  //       }
+  //     }
+  //   ]
+  // }
+}
